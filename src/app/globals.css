@@ -33,7 +33,16 @@ All colors MUST be HSL.
   --input: 214.3 31.8% 91.4%;
   --ring: 222.2 84% 4.9%;
 
-  --radius: 0.5rem;
+  --radius: 0.75rem;
+
+  /* Creator Platform Colors - Light Mode */
+  --creator-primary: 262 83% 58%; /* Purple accent */
+  --creator-primary-foreground: 0 0% 100%;
+  --creator-secondary: 22 93% 58%; /* Orange/Gold accent */
+  --creator-secondary-foreground: 0 0% 100%;
+  --creator-background: 0 0% 98%;
+  --creator-surface: 0 0% 100%;
+  --creator-muted: 220 13% 95%;
 
   --sidebar-background: 0 0% 98%;
   --sidebar-foreground: 240 5.3% 26.1%;
@@ -46,41 +55,51 @@ All colors MUST be HSL.
 }
 
 .dark {
-  --background: 222.2 84% 4.9%;
+  --background: 262 47% 11%; /* Deep purple background */
   --foreground: 210 40% 98%;
 
-  --card: 222.2 84% 4.9%;
+  --card: 262 30% 15%; /* Slightly lighter purple for cards */
   --card-foreground: 210 40% 98%;
 
-  --popover: 222.2 84% 4.9%;
+  --popover: 262 30% 15%;
   --popover-foreground: 210 40% 98%;
 
-  --primary: 210 40% 98%;
-  --primary-foreground: 222.2 47.4% 11.2%;
+  --primary: 262 83% 58%; /* Purple accent */
+  --primary-foreground: 0 0% 100%;
 
-  --secondary: 217.2 32.6% 17.5%;
-  --secondary-foreground: 210 40% 98%;
+  --secondary: 22 93% 58%; /* Orange/Gold accent */
+  --secondary-foreground: 0 0% 100%;
 
-  --muted: 217.2 32.6% 17.5%;
+  --muted: 262 25% 20%;
   --muted-foreground: 215 20.2% 65.1%;
 
-  --accent: 217.2 32.6% 17.5%;
-  --accent-foreground: 210 40% 98%;
+  --accent: 22 93% 58%; /* Orange accent */
+  --accent-foreground: 0 0% 100%;
 
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 210 40% 98%;
 
-  --border: 217.2 32.6% 17.5%;
-  --input: 217.2 32.6% 17.5%;
-  --ring: 212.7 26.8% 83.9%;
-  --sidebar-background: 240 5.9% 10%;
-  --sidebar-foreground: 240 4.8% 95.9%;
-  --sidebar-primary: 224.3 76.3% 48%;
+  --border: 262 25% 25%;
+  --input: 262 25% 20%;
+  --ring: 262 83% 58%;
+
+  /* Creator Platform Colors - Dark Mode */
+  --creator-primary: 262 83% 58%; /* Purple accent */
+  --creator-primary-foreground: 0 0% 100%;
+  --creator-secondary: 22 93% 58%; /* Orange/Gold accent */
+  --creator-secondary-foreground: 0 0% 100%;
+  --creator-background: 262 47% 11%;
+  --creator-surface: 262 30% 15%;
+  --creator-muted: 262 25% 20%;
+
+  --sidebar-background: 262 35% 12%;
+  --sidebar-foreground: 210 40% 98%;
+  --sidebar-primary: 262 83% 58%;
   --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 240 3.7% 15.9%;
-  --sidebar-accent-foreground: 240 4.8% 95.9%;
-  --sidebar-border: 240 3.7% 15.9%;
-  --sidebar-ring: 217.2 91.2% 59.8%;
+  --sidebar-accent: 262 25% 20%;
+  --sidebar-accent-foreground: 210 40% 98%;
+  --sidebar-border: 262 25% 25%;
+  --sidebar-ring: 262 83% 58%;
 }
 
 @theme {
@@ -124,7 +143,16 @@ All colors MUST be HSL.
   --color-sidebar-accent-foreground: hsl(var(--sidebar-accent-foreground));
   --color-sidebar-border: hsl(var(--sidebar-border));
   --color-sidebar-ring: hsl(var(--sidebar-ring));
-  
+
+  /* Creator Platform Colors */
+  --color-creator-primary: hsl(var(--creator-primary));
+  --color-creator-primary-foreground: hsl(var(--creator-primary-foreground));
+  --color-creator-secondary: hsl(var(--creator-secondary));
+  --color-creator-secondary-foreground: hsl(var(--creator-secondary-foreground));
+  --color-creator-background: hsl(var(--creator-background));
+  --color-creator-surface: hsl(var(--creator-surface));
+  --color-creator-muted: hsl(var(--creator-muted));
+
   /* Border Radius */
   --radius-lg: var(--radius);
   --radius-md: calc(var(--radius) - 2px);
